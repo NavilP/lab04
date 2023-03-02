@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de foto</title>
+</head>
+<body>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Detalles de la foto</legend>
+            <table>
+                <tr>
+                    <td colspan="3">Título<br/>
+                        <input type="text" name="titulo" size="70" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Descripción<br/>
+                        <textarea rows="6" cols="80"></textarea>
+                    </td>
+                <tr>
+                    <td>
+                        <p>Continente<br/>
+                            <select name="continente" id="continente">
+                                <option value="escogerContinente">Escoger continente</option>
+                                <option value="africa">Africa</option>
+                                <option value="asia">Asia</option>
+                                <option value="europa">Europa</option>
+                                <option value="norte-america">Norte Amércia</option>
+                                <option value="sur-america">Sur América</option>
+                            </select>
+                        </p>
+                        <p>País<br/>
+                            <select name="pais" id="pais">
+                                <option value="escogerPais">País</option>
+                                <option value="canada">Canada</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="estados-unidos">Estados Unidos</option>
+                            </select>
+                        </p>
+                        <p>Ciudad<br/>
+                            <input list="ciudad" id="cuidad" name="ciudad" size="40">
+                            <datalist id="ciudad">
+                                <option value="Calgary"></option>
+                                <option value="Montreal"></option>
+                                <option value="Toronto"></option>
+                                <option value="Vancouver"></option>
+                                <option value="Tlaxcala"></option>
+                            </datalist>
+                        </p>
+                        <p>
+                            Acepto la licencia de software
+                            <input type="checkbox" name="licencia" value="licencia"/>
+                        </p>
+                        <p>
+                            Califica esta foto:<br/>
+                            <input type="number" name="calificacion" id="calificacion" min="0" max="10">
+                        </p>
+                        <p>
+                            Colección de color<br/>
+                            <input type="color"/><br/>
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar"/>
+                            <input type="reset" value="Limpiar"/>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Copyright?<br/>
+                            <input type="radio" name="todos-derechos" value="todos-derechos"/> Todos los derechos reservados<br/>
+                            <input type="radio" name="creative-commons" value="creative-commons"/> Creative Commons<br/>
+                            Licencias Creative Commons<br/>
+                            <input type="checkbox" name="atribucion" value="atribucion"/>Atribución<br/>
+                            <input type="checkbox" name="mo-comercial" value="mo-comercial"/>No comercial<br/>
+                            <input type="checkbox" name="trabajos-derivativos" value="trabajos-derivativos"/>No hay trabajos derivativos<br/>
+                            <input type="checkbox" name="compartir-igual" value="compartir-igual"/>Compatir por igual
+                        </p>
+                        <p>
+                            Fecha de toma:<br>
+                            <input type="date"/> <br/>
+                        </p>
+                        <p>
+                            Hora de toma:<br>
+                            <input type="time"/><br/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
